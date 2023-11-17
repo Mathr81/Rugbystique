@@ -1,0 +1,26 @@
+{
+  "name": "melomania",
+  "version": "1.0.0",
+  "description": "A cool  music bot !",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathr81/MeloMania.git"
+  },
+  "author": "Mathr81",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mathr81/MeloMania/issues"
+  },
+  "homepage": "https://github.com/Mathr81/MeloMania#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.0.1"
+  }
+}
