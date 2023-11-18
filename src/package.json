@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Mathr81/MeloMania#readme",
   "dependencies": {
+    "axios": "^1.6.2",
     "discord.js": "^14.13.0",
     "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
