@@ -28,7 +28,7 @@ module.exports = {
 
         var config = {
             method: 'get',
-            url: `https://v1.rugby.api-sports.io/games?league=16&season=2023&date=${date}`,
+            url: `https://v1.rugby.api-sports.io/games?league=16&season=2023&date=${date}&timezone=Europe/Paris`,
             headers: {
               'x-rapidapi-key': process.env.API_KEY,
               'x-rapidapi-host': 'v1.rugby.api-sports.io'
