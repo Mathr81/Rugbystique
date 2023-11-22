@@ -1,6 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
 const axios = require('axios');
 require('dotenv').config();
+const Match = require('../../functions/addMatch');
+const convertToISO = require('../../functions/convertToISO');
+const addMatch = require('../../functions/addMatch');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -46,6 +49,11 @@ module.exports = {
                 };
               });
               
+              
+              matchData.map(match => {
+                addMatch(match.homeTeam, match.awayTeam, convertToISO(date, match.matchTime));
+               })
+
               const embed = {
                 color: 0x0099ff,
                 title: 'Matchs',

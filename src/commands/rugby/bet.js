@@ -1,7 +1,7 @@
 const { SlashCommandBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require('discord.js');
 const axios = require('axios');
 require('dotenv').config();
-const User = require('../../database/user');
+//const User = require('../../database/match');
 
 module.exports = {
     data: new SlashCommandBuilder()
