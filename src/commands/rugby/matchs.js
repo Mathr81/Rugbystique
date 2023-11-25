@@ -14,7 +14,6 @@ module.exports = {
     .addStringOption(opt => opt.setName("date").setDescription("La date des matchs au format : 2023-11-18").setRequired(false)),
 
     async run(interaction) {
-
         function getDateString() {
             const date = new Date();
             const year = date.getFullYear();

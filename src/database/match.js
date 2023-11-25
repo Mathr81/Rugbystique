@@ -11,6 +11,6 @@ const matchSchema = new mongoose.Schema({
         }
     ],
     winner: String,
-}, { versionKey: false });
+}, { versionKey: false }, { _id : false });
 
 module.exports = mongoose.model('Match', matchSchema);
