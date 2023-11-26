@@ -47,7 +47,7 @@ for (let i = 0; i < points.length; i += pageSize) {
 }
 
 // Afficher la première page du classement
-const currentPage = 0;
+let currentPage = 0;
 
 const currentPageEmbed = new EmbedBuilder()
     .setTitle(`Classement - Page ${currentPage + 1}`)
@@ -126,7 +126,7 @@ collector.on('collect', async (interaction) => {
         }
     } else if (interaction.customId === 'previousPage') {
         // Afficher la page précédente du classement
-        const previousPage = currentPage - 1;
+        let previousPage = currentPage - 1;
         if (previousPage >= 0) {
             const previousPageEmbed = new EmbedBuilder()
                 .setTitle(`Classement - Page ${previousPage + 1}`)
