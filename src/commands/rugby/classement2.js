@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, MessageButtonFactory } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder, ButtonBuilder, ActionRowBuilder } = require('discord.js');
 const calculatePoints = require('../../functions/calculatePoints')
 const User= require('../../database/user')
 const getDateString = require('../../functions/getDateString')
@@ -71,19 +71,17 @@ const currentPageEmbed = new EmbedBuilder()
         },
     ]);
 
-    const nextPageButton = new MessageButtonFactory()
-    .setStyle('PRIMARY')
+    const nextPageButton = new ButtonBuilder()
+    .setStyle('Primary')
     .setLabel('Next Page')
     .setCustomId('nextPage')
-    .create();
 
-const previousPageButton = new MessageButtonFactory()
-    .setStyle('PRIMARY')
+    const previousPageButton = new ButtonBuilder()
+    .setStyle('Primary')
     .setLabel('Previous Page')
     .setCustomId('previousPage')
-    .create();
 
-const row = new MessageActionRow()
+const row = new ActionRowBuilder()
     .addComponents(previousPageButton, nextPageButton);
 
 interaction.channel.send({
