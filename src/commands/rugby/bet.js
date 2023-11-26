@@ -59,13 +59,13 @@ module.exports = {
                     .setCustomId(match.homeTeam)
                     .setLabel(match.homeTeam)
                     .setStyle(ButtonStyle.Secondary)
-                    .setEmoji(getEmojiId(match.homeTeam));
+                    .setEmoji(`${getEmojiId(match.homeTeam)}`);
               
                   const awayTeam = new ButtonBuilder()
                     .setCustomId(match.awayTeam)
                     .setLabel(match.awayTeam)
                     .setStyle(ButtonStyle.Secondary)
-                    .setEmoji(getEmojiId(match.awayTeam));
+                    .setEmoji(`${getEmojiId(match.awayTeam)}`);
               
                   const row = new ActionRowBuilder()
                     .addComponents(homeTeam, awayTeam);
@@ -73,7 +73,7 @@ module.exports = {
                   await interaction.channel.send({
                     content: `**${match.homeTeam}** vs **${match.awayTeam}**`,
                     components: [row]
-                  });               
+                  });             
                });
                }
                
@@ -101,7 +101,7 @@ module.exports = {
 
                 const teams = findTeams(matchsArray, buttonInteraction.component.label);
 
-                await buttonInteraction.reply({ content: `Vous avez parié sur : **${buttonInteraction.component.label}**`, ephemeral: true });
+                await buttonInteraction.reply({ content: `Vous avez prédit que le vainqueur sera : **${buttonInteraction.component.label}**`, ephemeral: true });
 
                 let matchToEdit = await Match.findOne({ homeTeam: teams.homeTeam, awayTeam: teams.awayTeam, date: convertToISO(date, teams.matchTime), 'pronostics.user_id': buttonInteraction.user.id }).exec();
 

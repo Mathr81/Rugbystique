@@ -5,7 +5,7 @@ module.exports = function getEmojiId(name) {
         "Bordeaux Begles": "1115021846912446505",
         "Castres Olympique": "1115024398177542265",
         "Clermont": "1115024662804578314",
-        "La Rochelle": "1115022772817625169",
+        "Stade Rochelais": "1115022772817625169",
         "Lyon": "1115023294555504780",
         "Montpellier": "1115025363072983070",
         "Racing 92": "1115024337037176893",

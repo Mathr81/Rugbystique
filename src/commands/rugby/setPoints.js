@@ -15,7 +15,7 @@ module.exports = {
 
         let points = interaction.options.getString("points");
         const user_input = interaction.options.getUser("user");
-        let user = await User.findOne({id: user_input})
+        let user = await User.findOne({id: user_input.id})
         if(!user) {
             user = new User({
               id: user_input.id,
@@ -26,6 +26,6 @@ module.exports = {
             user.points = points
             await user.save()
         }
-        await interaction.reply(`<@${user_input}> a désormais ${points} points.`)
+        await interaction.reply(`${user_input} a désormais ${points} points.`)
     }
 };

@@ -5,12 +5,16 @@ const loadEvents = require('./loaders/loadEvents');
 const loadDatabase = require('./loaders/loadDatabase');
 require('dotenv').config();
 
+const executeAtMidnight = require('./functions/executeAtMidnight')
+
 client.commands = new Collection();
 
 (async () => {
+    await loadDatabase();
     await loadCommmands(client);
     await loadEvents(client);
-    await loadDatabase();
+
+    await executeAtMidnight();
     
     await client.login(process.env.TOKEN);
 })();

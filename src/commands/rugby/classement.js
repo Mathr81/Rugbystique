@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const calculatePoints = require('../../functions/calculatePoints')
 const User= require('../../database/user')
+const getDateString = require('../../functions/getDateString')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -16,7 +17,7 @@ module.exports = {
 
         let users = await User.find()
         for (let i = 0; i < users.length; i++) {
-            await calculatePoints(users[i].id)
+            //await calculatePoints(users[i].id, getDateString())
 
             points.push({id: users[i].id, points: users[i].points})
         }
@@ -35,13 +36,19 @@ module.exports = {
                 points[i].rang = rang;
             }
 
+        /*
         var rangs_list = points.map((line) => `${line.rang}\n`).join("");
         var ids_list = points.map((line) => `<@${line.id}>\n`).join("");
         var points_list = points.map((line) => `${line.points}\n`).join("");
+        */
+        var ids_list = points.map((line) => `<@${line.id}>\n`).join("").slice(0, 1023);
+        var rangs_list = points.map((line) => `${line.rang}\n`).join("").slice(0, 1023);
+        var points_list = points.map((line) => `${line.points}\n`).join("").slice(0, 1023);
 
         const embed = new EmbedBuilder()
             .setTitle('Classement')
             .setColor(0x0099ff)
+            .setFooter({ text:`Updated at ${new Date().toLocaleString()}`})
             .setFields([
                 {
                     name: 'Rang',
