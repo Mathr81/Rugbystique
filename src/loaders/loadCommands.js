@@ -12,16 +12,13 @@ module.exports = async client => {
             client.commands.set(command.data.name, command);
             count++;
 
-            let dbcommand = await Command.findOneAndDelete({})
-            dbcommand = await Command.findOne({ name: command.data.name, description: command.data.description }).exec();
-            if(!dbcommand) {
-                dbcommand = new Command({
-                    name: command.data.name,
-                    description: command.data.description,
-                    category: dirs,
-                })
-                await dbcommand.save()
-            }
+            let dbcommand = await Command.findOneAndDelete({ name: command.data.name })            
+            dbcommand = new Command({
+                name: command.data.name,
+                description: command.data.description,
+                category: dirs,
+            })
+            await dbcommand.save()
         }
     }
     console.log(`[commands] => ${count} logged commands`);

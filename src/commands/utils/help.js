@@ -25,8 +25,6 @@ module.exports = {
             array.push({name: dbcommands[i].name, description: dbcommands[i].description, category: dbcommands[i].category})
         }
 
-        console.log(array)
-
         // Group commands by directory
         const groupedCommands = array.reduce((acc, { name, category, description }) => {
             if (!acc[category]) {
