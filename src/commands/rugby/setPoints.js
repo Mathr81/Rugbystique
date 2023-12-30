@@ -26,6 +26,6 @@ module.exports = {
             user.points = points
             await user.save()
         }
-        await interaction.reply(`${user_input} a désormais ${points} points.`)
+        await interaction.reply({content: `${user_input} a désormais ${points} points.`, ephemeral: true})
     }
 };

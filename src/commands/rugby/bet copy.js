@@ -12,11 +12,10 @@ module.exports = {
     .setName("betcopy")
     .setDescription("Crées un pari pour chaque match de la journée")
     .setDMPermission(false)
+    .addStringOption(opt => opt.setName("date").setDescription("La date des matchs au format : 2023-11-18").setRequired(false))
     .setDefaultMemberPermissions(null),
 
     async run(interaction) {
-      interaction.reply({ content: 'Génération des pronostics ...', ephemeral: true })
-
         function getDateString() {
             const date = new Date();
             const year = date.getFullYear();
@@ -26,8 +25,10 @@ module.exports = {
             return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
            }
 
-        //date = getDateString()
-        date = "2023-12-23"
+        var date = interaction.options.getString("date");
+        if(!date) {
+            date = getDateString()
+        }
 
         var config = {
             method: 'get',
@@ -80,10 +81,14 @@ module.exports = {
                });
                }
                
+               if(matchData.length === 0) {
+                await interaction.reply({ content: "Aucun match pour cette date !", ephemeral: true });
+                return;
+               } else {
+                await interaction.reply({ content: 'Génération des pronostics ...', ephemeral: true })
+               }
+               interaction.channel.send({ content: "**__Pronostics pour les matchs du " + date + "__** :" });
                sendMatchs(matchData);
-
-              // Transformer l'objet matchs en tableau
-              const matchsArray = Object.values(matchs);
 
           }).catch(function (error) {
             console.log(error);
@@ -92,11 +97,6 @@ module.exports = {
     async button(interaction) {
 
       const slicedCustomId = interaction.customId.split("/")
-      console.log(interaction.component.customId)
-        // function findTeams(matchsArray, team) {
-        // const match = matchsArray.find(m => m.homeTeam === team || m.awayTeam === team);
-        // return match ? {homeTeam: match.homeTeam, awayTeam: match.awayTeam, matchTime: match.matchTime} : null;
-        // }
 
       let user = await User.findOne({id: interaction.user.id})
       if(!user) {
@@ -106,12 +106,22 @@ module.exports = {
         });
         await user.save()
       }
+      
+      function isDatePassed(dateISO) {
+        const currentDate = Date.now();
+        const parsedDate = Date.parse(dateISO);
+      
+        return parsedDate <= currentDate;
+      }
 
-      //const teams = findTeams(matchsArray, interaction.component.label);
+      const isPassed = isDatePassed(slicedCustomId[3]);
+      if(isPassed === true) {
+        await interaction.reply({ content: `Le match est passé !`, ephemeral: true });
+        return;
+      }
 
       await interaction.reply({ content: `Vous avez prédit que le vainqueur sera : **${interaction.component.label}**`, ephemeral: true });
-
-      
+   
       let matchInDB = await Match.findOne({ homeTeam: slicedCustomId[1], date: slicedCustomId[3]}).exec();
       if(!matchInDB) {
         matchInDB = await Match.findOne({ awayTeam: slicedCustomId[1], date: slicedCustomId[3]}).exec();
@@ -120,8 +130,6 @@ module.exports = {
       if(!matchInDB) {
         console.log("match not found in db")
       }else {
-
-        console.log(matchInDB)
 
         function findPronosticByUserId(user_id) {
           for (const pronostic of matchInDB.pronostics) {
@@ -152,24 +160,5 @@ module.exports = {
         }
 
       }
-      /*
-      if(!matchToEdit) {
-        
-          const newProno = {
-            "user_id": interaction.user.id,
-            "winner": interaction.component.label
-          };
-          
-          const result = await Match.updateOne(
-            { "homeTeam": teams.homeTeam, "awayTeam": teams.awayTeam, "date": convertToISO(date, teams.matchTime) },
-            { "$push": { "pronostics": newProno } }
-            );
-        } else {
-
-          const result = await Match.updateOne(
-            { "homeTeam": teams.homeTeam, "awayTeam": teams.awayTeam, "date": convertToISO(date, teams.matchTime), "pronostics.user_id": buttonInteraction.user.id },
-            { "$set": { "pronostics.$.winner": interaction.component.label } }
-            );
-        }*/
     }
 };
