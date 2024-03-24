@@ -11,7 +11,8 @@ module.exports = {
     .setDescription("Donne les matchs d'une certaine date")
     .setDMPermission(false)
     .setDefaultMemberPermissions(null)
-    .addStringOption(opt => opt.setName("date").setDescription("La date des matchs au format : 2023-11-18").setRequired(false)),
+    .addStringOption(opt => opt.setName("date").setDescription("La date des matchs au format : 2023-11-18").setRequired(false))
+    .addBooleanOption(opt => opt.setName("challengecup").setDescription("Donner les matchs de challenge cup").setRequired(false)),
 
     async run(interaction) {
         function getDateString() {
@@ -28,9 +29,15 @@ module.exports = {
             date = getDateString()
         }
 
+        if(interaction.options.getBoolean("challengecup")) {
+            var league =52;
+        }else{
+            var league = 16;
+        }
+
         var config = {
             method: 'get',
-            url: `https://v1.rugby.api-sports.io/games?league=16&season=2023&date=${date}&timezone=Europe/Paris`,
+            url: `https://v1.rugby.api-sports.io/games?league=${league}&season=2023&date=${date}&timezone=Europe/Paris`,
             headers: {
               'x-rapidapi-key': process.env.API_KEY,
               'x-rapidapi-host': 'v1.rugby.api-sports.io'
@@ -48,10 +55,15 @@ module.exports = {
                 };
               });
               
-              
-              matchData.map(match => {
-                addMatch(match.homeTeam, match.awayTeam, convertToISO(date, match.matchTime));
-               })
+              if(matchData.length === 0) {
+                await interaction.reply({ content:"Il n'y a pas de matchs pour cette date", ephemeral: true });
+                return;
+              }
+              if(!interaction.options.getBoolean("challengecup")) {
+                matchData.map(match => {
+                  addMatch(match.homeTeam, match.awayTeam, convertToISO(date, match.matchTime));
+                 })
+              }
 
               const embed = {
                 color: 0x0099ff,
