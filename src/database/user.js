@@ -1,17 +1,8 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    user_id: String,
-    pronos: [
-        {
-            date: Date,
-            homeTeam: String,
-            awayTeam: String,
-            pronos: {
-                winner: String
-            }
-        }
-    ]
-});
+    id: String,
+    points: Number,
+}, { versionKey: false }, { _id : false });
 
 module.exports = mongoose.model('User', userSchema);

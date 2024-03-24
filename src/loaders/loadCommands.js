@@ -1,4 +1,6 @@
 const { readdirSync } = require('fs');
+const mongoose = require('mongoose');
+const Command = require('../database/command');
 
 module.exports = async client => {
     let count = 0;
@@ -9,7 +11,16 @@ module.exports = async client => {
             const command = require(`../commands/${dirs}/${files}`);
             client.commands.set(command.data.name, command);
             count++;
+
+            let dbcommand = await Command.findOneAndDelete({ name: command.data.name })            
+            dbcommand = new Command({
+                name: command.data.name,
+                description: command.data.description,
+                category: dirs,
+            })
+            await dbcommand.save()
         }
     }
     console.log(`[commands] => ${count} logged commands`);
+
 }
