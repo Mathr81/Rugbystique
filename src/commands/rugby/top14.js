@@ -14,7 +14,7 @@ module.exports = {
     async run(interaction) {
         await interaction.deferReply()
         // Lancez un navigateur Chrome
-        const browser = await puppeteer.launch({ headless: "new" });
+        const browser = await puppeteer.launch({ headless: false });
 
         // Ouvrez une nouvelle page
         const page = await browser.newPage();
@@ -26,13 +26,10 @@ module.exports = {
         const element = await page.$('#wg-api-rugby-standings');
         await element.screenshot({path: 'screenshot.png', clip: {x: 0, y: 0, width: 800, height: 800}});
 
-        // Prenez une capture d'écran de la page et enregistrez-la sous le nom "screenshot.png"
-        //await page.screenshot({path: 'screenshot.png'});
-
         // Fermez le navigateur
         await browser.close();
 
         await interaction.followUp({files: ['screenshot.png']})
-        //fs.unlinkSync('screenshot.png');
+        fs.unlinkSync('screenshot.png');
     }
 };
