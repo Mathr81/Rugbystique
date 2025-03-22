@@ -30,14 +30,14 @@ module.exports = {
         }
 
         if(interaction.options.getBoolean("challengecup")) {
-            var league =52;
+            var league = 52;
         }else{
-            var league = 16;
+            var league = process.env.API_LEAGUE_ID;
         }
-
+        
         var config = {
             method: 'get',
-            url: `https://v1.rugby.api-sports.io/games?league=${league}&season=2023&date=${date}&timezone=Europe/Paris`,
+            url: `https://v1.rugby.api-sports.io/games?league=${league}&season=${process.env.API_SEASON}&date=${date}&timezone=Europe/Paris`,
             headers: {
               'x-rapidapi-key': process.env.API_KEY,
               'x-rapidapi-host': 'v1.rugby.api-sports.io'

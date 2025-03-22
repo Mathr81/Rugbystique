@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle, ThreadMemberFlags } = require('discord.js');
+const { SlashCommandBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require('discord.js');
 const axios = require('axios');
 require('dotenv').config();
 const Match = require('../../database/match');
@@ -10,13 +10,12 @@ const addMatch = require('../../functions/addMatch');
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("bet")
-    .setDescription("Crées un pari pour chaque match de la journée")
+    .setDescription("Create a bet for the pronos")
     .setDMPermission(false)
+    .addStringOption(opt => opt.setName("date").setDescription("La date des matchs au format : 2023-11-18").setRequired(false))
     .setDefaultMemberPermissions(null),
 
     async run(interaction) {
-      interaction.reply({ content: 'Génération des pronostics ...', ephemeral: true })
-
         function getDateString() {
             const date = new Date();
             const year = date.getFullYear();
@@ -26,11 +25,14 @@ module.exports = {
             return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
            }
 
-        date = getDateString()
+        var date = interaction.options.getString("date");
+        if(!date) {
+            date = getDateString()
+        }
 
         var config = {
             method: 'get',
-            url: `https://v1.rugby.api-sports.io/games?league=16&season=2023&date=${date}&timezone=Europe/Paris`,
+            url: `https://v1.rugby.api-sports.io/games?league=16&season=${process.env.API_SEASON}&date=${date}&timezone=Europe/Paris`,
             headers: {
               'x-rapidapi-key': process.env.API_KEY,
               'x-rapidapi-host': 'v1.rugby.api-sports.io'
@@ -54,15 +56,17 @@ module.exports = {
                 matchData.map(async (match, i) => {
                   matchs[i] = { homeTeam: match.homeTeam, awayTeam: match.awayTeam, matchTime: match.time };
                   addMatch(match.homeTeam, match.awayTeam, convertToISO(date, match.time));
+
+                  const matchISODate = convertToISO(date, match.time);
               
                   const homeTeam = new ButtonBuilder()
-                    .setCustomId(match.homeTeam)
+                    .setCustomId("bet/"+match.homeTeam+"/"+match.awayTeam+"/"+matchISODate)
                     .setLabel(match.homeTeam)
                     .setStyle(ButtonStyle.Secondary)
                     .setEmoji(`${getEmojiId(match.homeTeam)}`);
               
                   const awayTeam = new ButtonBuilder()
-                    .setCustomId(match.awayTeam)
+                    .setCustomId("bet/"+match.awayTeam+"/"+match.homeTeam+"/"+matchISODate)
                     .setLabel(match.awayTeam)
                     .setStyle(ButtonStyle.Secondary)
                     .setEmoji(`${getEmojiId(match.awayTeam)}`);
@@ -77,56 +81,84 @@ module.exports = {
                });
                }
                
-               sendMatchs(matchData);
-
-               // Transformer l'objet matchs en tableau
-               const matchsArray = Object.values(matchs);
-
-               function findTeams(matchsArray, team) {
-                const match = matchsArray.find(m => m.homeTeam === team || m.awayTeam === team);
-                return match ? {homeTeam: match.homeTeam, awayTeam: match.awayTeam, matchTime: match.matchTime} : null;
+               if(matchData.length === 0) {
+                await interaction.reply({ content: "Aucun match pour cette date !", ephemeral: true });
+                return;
+               } else {
+                await interaction.reply({ content: 'Génération des pronostics ...', ephemeral: true })
                }
-
-               interaction.client.on('interactionCreate', async (buttonInteraction) => {
-                if (!buttonInteraction.isButton()) return;
-
-                let user = await User.findOne({id: buttonInteraction.user.id})
-                if(!user) {
-                  user = new User({
-                    id: buttonInteraction.user.id,
-                    points: 0
-                  });
-                  await user.save()
-                }
-
-                const teams = findTeams(matchsArray, buttonInteraction.component.label);
-
-                await buttonInteraction.reply({ content: `Vous avez prédit que le vainqueur sera : **${buttonInteraction.component.label}**`, ephemeral: true });
-
-                let matchToEdit = await Match.findOne({ homeTeam: teams.homeTeam, awayTeam: teams.awayTeam, date: convertToISO(date, teams.matchTime), 'pronostics.user_id': buttonInteraction.user.id }).exec();
-
-                if(!matchToEdit) {
-                  
-                    const newProno = {
-                      "user_id": buttonInteraction.user.id,
-                      "winner": buttonInteraction.component.label
-                    };
-                    
-                    const result = await Match.updateOne(
-                      { "homeTeam": teams.homeTeam, "awayTeam": teams.awayTeam, "date": convertToISO(date, teams.matchTime) },
-                      { "$push": { "pronostics": newProno } }
-                      );
-                  } else {
-
-                    const result = await Match.updateOne(
-                      { "homeTeam": teams.homeTeam, "awayTeam": teams.awayTeam, "date": convertToISO(date, teams.matchTime), "pronostics.user_id": buttonInteraction.user.id },
-                      { "$set": { "pronostics.$.winner": buttonInteraction.component.label } }
-                      );
-                  }
-              });
+               interaction.channel.send({ content: "**__Pronostics pour les matchs du " + date + "__** :" });
+               sendMatchs(matchData);
 
           }).catch(function (error) {
             console.log(error);
           });
+    },
+    async button(interaction) {
+
+      const slicedCustomId = interaction.customId.split("/")
+
+      let user = await User.findOne({id: interaction.user.id})
+      if(!user) {
+        user = new User({
+          id: interaction.user.id,
+          points: 0
+        });
+        await user.save()
+      }
+      
+      function isDatePassed(dateISO) {
+        const currentDate = Date.now();
+        const parsedDate = Date.parse(dateISO);
+      
+        return parsedDate <= currentDate;
+      }
+
+      const isPassed = isDatePassed(slicedCustomId[3]);
+      if(isPassed === true) {
+        await interaction.reply({ content: `Le match est passé !`, ephemeral: true });
+        return;
+      }
+
+      await interaction.reply({ content: `Vous avez prédit que le vainqueur sera : **${interaction.component.label}**`, ephemeral: true });
+   
+      let matchInDB = await Match.findOne({ homeTeam: slicedCustomId[1], date: slicedCustomId[3]}).exec();
+      if(!matchInDB) {
+        matchInDB = await Match.findOne({ awayTeam: slicedCustomId[1], date: slicedCustomId[3]}).exec();
+      }
+
+      if(!matchInDB) {
+        console.log("match not found in db")
+      }else {
+
+        function findPronosticByUserId(user_id) {
+          for (const pronostic of matchInDB.pronostics) {
+            if (pronostic.user_id === user_id) {
+              return pronostic;
+            }
+          }
+          return null;
+        }
+
+        const userPronostic = findPronosticByUserId(interaction.user.id)
+        if(!userPronostic) {
+          const newProno = {
+            "user_id": interaction.user.id,
+            "winner": interaction.component.label
+          };
+  
+          const result = await Match.updateOne(
+            { "homeTeam": matchInDB.homeTeam, "awayTeam": matchInDB.awayTeam, "date": matchInDB.date },
+            { "$push": { "pronostics": newProno } }
+          );
+        } else {
+
+          const result = await Match.updateOne(
+            { "homeTeam": matchInDB.homeTeam, "awayTeam": matchInDB.awayTeam, "date": matchInDB.date, "pronostics.user_id": interaction.user.id },
+            { "$set": { "pronostics.$.winner": interaction.component.label } }
+            );
+        }
+
+      }
     }
 };

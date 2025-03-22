@@ -10,13 +10,15 @@ module.exports = {
     .setName("setwinners")
     .setDescription("Set the winners of today's matches.")
     .setDMPermission(true)
-    .setDefaultMemberPermissions(null),
+    .setDefaultMemberPermissions(null)
+    .addStringOption(opt => opt.setName("date").setDescription("The date to register winners in the format : 2023-11-18").setRequired(false)),
 
     async run(interaction) {
-        const date = getDateString()
+        const date = interaction.options.getString("date");
+        if(!date) { date = getDateString() };
         var config = {
             method: 'get',
-            url: `https://v1.rugby.api-sports.io/games?league=16&season=2023&date=${date}&timezone=Europe/Paris`,
+            url: `https://v1.rugby.api-sports.io/games?league=${process.env.API_LEAGUE_ID}&season=${process.env.API_SEASON}&date=${date}&timezone=Europe/Paris`,
             headers: {
               'x-rapidapi-key': process.env.API_KEY,
               'x-rapidapi-host': 'v1.rugby.api-sports.io'

@@ -19,7 +19,7 @@ module.exports = {
             ephemeral: true
         })
 
-        const pages =await makeClassement()
+        const pages = await makeClassement()
 
         // Afficher la première page du classement
         let currentPage = 0;

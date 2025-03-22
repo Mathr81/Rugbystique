@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, PermissionsBitField } = require('discord.js');
 const puppeteer = require('puppeteer');
 const path = require('path')
 const filePath = path.resolve(__dirname, 'top14.html');
@@ -9,7 +9,7 @@ module.exports = {
     .setName("top14")
     .setDescription("Get top14 classement")
     .setDMPermission(true)
-    .setDefaultMemberPermissions(null),
+    .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
 
     async run(interaction) {
         await interaction.deferReply()
