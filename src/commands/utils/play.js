@@ -10,7 +10,7 @@ module.exports = {
     .setDefaultMemberPermissions(null),
 
     async run(interaction) {
-        const apiBaseURL = 'https://vscode.sublimavps.duckdns.org/proxy/3000';
+        const apiBaseURL = 'http://localhost:3000';
         const tvchannel = interaction.options.getString('tvchannel') || 'Canal+' // CANAL+ by default
         const channel = interaction.member?.voice?.channel;
         if (!channel) { 
@@ -25,7 +25,7 @@ module.exports = {
         await interaction.reply(`Started streaming ${tvchannel} in ${channel}`);
     },
     async autocomplete(interaction) {
-        const apiBaseURL = 'https://vscode.sublimavps.duckdns.org/proxy/3000';
+        const apiBaseURL = 'http://localhost:3000';
         const focusedValue = interaction.options.getFocused();
         const choices = (await axios.post(`${apiBaseURL}/api/channels`, { channelName: focusedValue })).data.results;
 		await interaction.respond(

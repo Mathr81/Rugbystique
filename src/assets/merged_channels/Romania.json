@@ -1,0 +1,878 @@
+[
+    {
+        "country": "Romania",
+        "id": 3174529991,
+        "name": "DIGI SPORT 1 HD",
+        "p": 268
+    },
+    {
+        "country": "Romania",
+        "id": 2190787212,
+        "name": "PRO TV HD",
+        "p": 310
+    },
+    {
+        "country": "Romania",
+        "id": 942898701,
+        "name": "REALITATEA PLUS",
+        "p": 549
+    },
+    {
+        "country": "Romania",
+        "id": 246329770,
+        "name": "PRO TV",
+        "p": 550
+    },
+    {
+        "country": "Romania",
+        "id": 714920047,
+        "name": "PRIMA TV RO",
+        "p": 715
+    },
+    {
+        "country": "Romania",
+        "id": 3723098333,
+        "name": "ROMANIA TV",
+        "p": 810
+    },
+    {
+        "country": "Romania",
+        "id": 3282501805,
+        "name": "DIGI SPORT 1",
+        "p": 874
+    },
+    {
+        "country": "Romania",
+        "id": 185416755,
+        "name": "DIGI 24",
+        "p": 876
+    },
+    {
+        "country": "Romania",
+        "id": 1935806021,
+        "name": "ACASA",
+        "p": 1038
+    },
+    {
+        "country": "Romania",
+        "id": 2215082621,
+        "name": "DIGI SPORT 2",
+        "p": 1091
+    },
+    {
+        "country": "Romania",
+        "id": 3731501465,
+        "name": "ORANGE SPORT 1",
+        "p": 1142
+    },
+    {
+        "country": "Romania",
+        "id": 3854088639,
+        "name": "FILM CAFE",
+        "p": 1163
+    },
+    {
+        "country": "Romania",
+        "id": 1631861196,
+        "name": "ANTENA 1 HD",
+        "p": 1296
+    },
+    {
+        "country": "Romania",
+        "id": 2228529603,
+        "name": "DIGI 24 HD",
+        "p": 1373
+    },
+    {
+        "country": "Romania",
+        "id": 867728420,
+        "name": "DIGI SPORT 2 HD",
+        "p": 1390
+    },
+    {
+        "country": "Romania",
+        "id": 1878508890,
+        "name": "ANTENA 1",
+        "p": 1453
+    },
+    {
+        "country": "Romania",
+        "id": 4279401658,
+        "name": "DIGI SPORT 3 HD",
+        "p": 1488
+    },
+    {
+        "country": "Romania",
+        "id": 1152291023,
+        "name": "NATIONAL TV",
+        "p": 1545
+    },
+    {
+        "country": "Romania",
+        "id": 2054040562,
+        "name": "PRIMA TV",
+        "p": 1637
+    },
+    {
+        "country": "Romania",
+        "id": 3993763997,
+        "name": "FILMBOX PREMIUM",
+        "p": 1675
+    },
+    {
+        "country": "Romania",
+        "id": 2135143941,
+        "name": "ANTENA STARS",
+        "p": 1719
+    },
+    {
+        "country": "Romania",
+        "id": 3110556621,
+        "name": "DIGI SPORT 3",
+        "p": 1737
+    },
+    {
+        "country": "Romania",
+        "id": 2260051152,
+        "name": "DIGI SPORT 4",
+        "p": 1867
+    },
+    {
+        "country": "Romania",
+        "id": 4133095385,
+        "name": "IMPACT TV MANELE",
+        "p": 1892
+    },
+    {
+        "country": "Romania",
+        "id": 2098788309,
+        "name": "TARAF",
+        "p": 1894
+    },
+    {
+        "country": "Romania",
+        "id": 4194073767,
+        "name": "TVR 3",
+        "p": 1966
+    },
+    {
+        "country": "Romania",
+        "id": 3451401639,
+        "name": "TNT HD",
+        "p": 1974
+    },
+    {
+        "country": "Romania",
+        "id": 2141477116,
+        "name": "ANTENA STARS HD",
+        "p": 2143
+    },
+    {
+        "country": "Romania",
+        "id": 2945216147,
+        "name": "B1 TV",
+        "p": 2159
+    },
+    {
+        "country": "Romania",
+        "id": 691736606,
+        "name": "VIASAT NATURE",
+        "p": 2170
+    },
+    {
+        "country": "Romania",
+        "id": 3213830486,
+        "name": "DIGI LIFE HD",
+        "p": 2227
+    },
+    {
+        "country": "Romania",
+        "id": 3089743655,
+        "name": "CREDO",
+        "p": 2282
+    },
+    {
+        "country": "Romania",
+        "id": 3670376642,
+        "name": "FILMBOX STARS",
+        "p": 2325
+    },
+    {
+        "country": "Romania",
+        "id": 2768290645,
+        "name": "DIGI ANIMAL WORLD HD",
+        "p": 2333
+    },
+    {
+        "country": "Romania",
+        "id": 86496830,
+        "name": "ZU TV",
+        "p": 2360
+    },
+    {
+        "country": "Romania",
+        "id": 2720648266,
+        "name": "FILMBOX",
+        "p": 2367
+    },
+    {
+        "country": "Romania",
+        "id": 282910621,
+        "name": "TRINITAS",
+        "p": 2404
+    },
+    {
+        "country": "Romania",
+        "id": 3576767611,
+        "name": "BOLLYWOOD TV HD",
+        "p": 2419
+    },
+    {
+        "country": "Romania",
+        "id": 1858621093,
+        "name": "BUCOVINA TV",
+        "p": 2459
+    },
+    {
+        "country": "Romania",
+        "id": 1781455170,
+        "name": "TVR 1",
+        "p": 2480
+    },
+    {
+        "country": "Romania",
+        "id": 3737977832,
+        "name": "MAGIC TV",
+        "p": 2499
+    },
+    {
+        "country": "Romania",
+        "id": 420221408,
+        "name": "PRO 2 HD",
+        "p": 2500
+    },
+    {
+        "country": "Romania",
+        "id": 3539611994,
+        "name": "U TV",
+        "p": 2519
+    },
+    {
+        "country": "Romania",
+        "id": 2046060049,
+        "name": "AGRO TV",
+        "p": 2561
+    },
+    {
+        "country": "Romania",
+        "id": 2897950865,
+        "name": "MOOZ",
+        "p": 2578
+    },
+    {
+        "country": "Romania",
+        "id": 2762629881,
+        "name": "ORANGE SPORT 3",
+        "p": 2627
+    },
+    {
+        "country": "Romania",
+        "id": 2978271020,
+        "name": "PRO CINEMA",
+        "p": 2667
+    },
+    {
+        "country": "Romania",
+        "id": 2104941053,
+        "name": "FILMBOX EXTRA",
+        "p": 2679
+    },
+    {
+        "country": "Romania",
+        "id": 3381201599,
+        "name": "LOOK SPORT HD",
+        "p": 2695
+    },
+    {
+        "country": "Romania",
+        "id": 483384393,
+        "name": "TVR HD",
+        "p": 2696
+    },
+    {
+        "country": "Romania",
+        "id": 4124538275,
+        "name": "DIGI SPORT 4 HD",
+        "p": 2713
+    },
+    {
+        "country": "Romania",
+        "id": 3546223306,
+        "name": "MOOZ RO",
+        "p": 2715
+    },
+    {
+        "country": "Romania",
+        "id": 4033560729,
+        "name": "FILMBOX FAMILY",
+        "p": 2742
+    },
+    {
+        "country": "Romania",
+        "id": 2785971469,
+        "name": "DIGI WORLD HD",
+        "p": 2758
+    },
+    {
+        "country": "Romania",
+        "id": 2129120495,
+        "name": "MOOZ HITS",
+        "p": 2769
+    },
+    {
+        "country": "Romania",
+        "id": 1478995347,
+        "name": "PRO X HD",
+        "p": 2780
+    },
+    {
+        "country": "Romania",
+        "id": 378191593,
+        "name": "ORANGE SPORT 4",
+        "p": 2783
+    },
+    {
+        "country": "Romania",
+        "id": 3021802433,
+        "name": "AXN WITH",
+        "p": 2795
+    },
+    {
+        "country": "Romania",
+        "id": 3493794502,
+        "name": "LOOK PLUS HD",
+        "p": 2824
+    },
+    {
+        "country": "Romania",
+        "id": 2580171593,
+        "name": "ORANGE SPORT 2",
+        "p": 2842
+    },
+    {
+        "country": "Romania",
+        "id": 3497498233,
+        "name": "PAPRIKA TV",
+        "p": 2863
+    },
+    {
+        "country": "Romania",
+        "id": 764322706,
+        "name": "TVR 2",
+        "p": 2878
+    },
+    {
+        "country": "Romania",
+        "id": 2044403783,
+        "name": "ETNO",
+        "p": 2921
+    },
+    {
+        "country": "Romania",
+        "id": 3166915380,
+        "name": "E! ENTERTAINMENT HD",
+        "p": 2930
+    },
+    {
+        "country": "Romania",
+        "id": 3422154030,
+        "name": "ID INVESTIGATION DISCOVERY HD",
+        "p": 3177
+    },
+    {
+        "country": "Romania",
+        "id": 4055775147,
+        "name": "DIGI ANIMAL WORLD",
+        "p": 3321
+    },
+    {
+        "country": "Romania",
+        "id": 2832823814,
+        "name": "1 MUSIC CHANNEL",
+        "p": 3459
+    },
+    {
+        "country": "Romania",
+        "id": 2573055575,
+        "name": "CINEMARATON HD",
+        "p": 3491
+    },
+    {
+        "country": "Romania",
+        "id": 2716329302,
+        "name": "HAPPY CHANNEL HD",
+        "p": 3580
+    },
+    {
+        "country": "Romania",
+        "id": 476441838,
+        "name": "TVR INTERNATIONAL",
+        "p": 3608
+    },
+    {
+        "country": "Romania",
+        "id": 4067987074,
+        "name": "TARAF TV",
+        "p": 3609
+    },
+    {
+        "country": "Romania",
+        "id": 1932473755,
+        "name": "PRO TV NEWS",
+        "p": 3858
+    },
+    {
+        "country": "Romania",
+        "id": 1628219216,
+        "name": "FILM NOW",
+        "p": 4084
+    },
+    {
+        "country": "Romania",
+        "id": 252596478,
+        "name": "DIGI LIFE",
+        "p": 4151
+    },
+    {
+        "country": "Romania",
+        "id": 2174062060,
+        "name": "DIVA CHANNEL",
+        "p": 4230
+    },
+    {
+        "country": "Romania",
+        "id": 2087129169,
+        "name": "B 1",
+        "p": 4265
+    },
+    {
+        "country": "Romania",
+        "id": 2707617826,
+        "name": "PRO TV INTERNATIONAL",
+        "p": 4381
+    },
+    {
+        "country": "Romania",
+        "id": 2015204510,
+        "name": "ROTV VALENCIA",
+        "p": 4432
+    },
+    {
+        "country": "Romania",
+        "id": 2083903308,
+        "name": "FISHING & HUNTING",
+        "p": 4475
+    },
+    {
+        "country": "Romania",
+        "id": 3192050174,
+        "name": "FAVORIT",
+        "p": 4476
+    },
+    {
+        "country": "Romania",
+        "id": 3275610158,
+        "name": "CINEMARATON",
+        "p": 4523
+    },
+    {
+        "country": "Romania",
+        "id": 2883855572,
+        "name": "BOLLYWOOD TV",
+        "p": 4569
+    },
+    {
+        "country": "Romania",
+        "id": 4242782308,
+        "name": "DIGI WORLD",
+        "p": 4681
+    },
+    {
+        "country": "Romania",
+        "id": 466874382,
+        "name": "PRO GOLD",
+        "p": 4702
+    },
+    {
+        "country": "Romania",
+        "id": 3576875795,
+        "name": "NICK TOONS",
+        "p": 4705
+    },
+    {
+        "country": "Romania",
+        "id": 3120381441,
+        "name": "KISS TV",
+        "p": 4803
+    },
+    {
+        "country": "Romania",
+        "id": 465445474,
+        "name": "COMEDY PLAY",
+        "p": 4936
+    },
+    {
+        "country": "Romania",
+        "id": 3650845286,
+        "name": "HIT CHANNEL",
+        "p": 4987
+    },
+    {
+        "country": "Romania",
+        "id": 2788611999,
+        "name": "MUSIC CHANNEL",
+        "p": 5015
+    },
+    {
+        "country": "Romania",
+        "id": 463762689,
+        "name": "HAPPY CHANNEL",
+        "p": 5094
+    },
+    {
+        "country": "Romania",
+        "id": 3761617862,
+        "name": "BOLLYWOOD CLASSIC",
+        "p": 5159
+    },
+    {
+        "country": "Romania",
+        "id": 1657199847,
+        "name": "ROCK TV",
+        "p": 5298
+    },
+    {
+        "country": "Romania",
+        "id": 2658184809,
+        "name": "ACASA GOLD",
+        "p": 5321
+    },
+    {
+        "country": "Romania",
+        "id": 95539373,
+        "name": "CRIME & INVESTIGATION NETWORK",
+        "p": 5344
+    },
+    {
+        "country": "Romania",
+        "id": 518251734,
+        "name": "MIREASA",
+        "p": 5387
+    },
+    {
+        "country": "Romania",
+        "id": 2832106599,
+        "name": "A 7 TV",
+        "p": 5393
+    },
+    {
+        "country": "Romania",
+        "id": 348279619,
+        "name": "NASUL TV",
+        "p": 5394
+    },
+    {
+        "country": "Romania",
+        "id": 2467663593,
+        "name": "DIGI 4K TV",
+        "p": 5409
+    },
+    {
+        "country": "Romania",
+        "id": 2806240274,
+        "name": "PRIMA SPORT",
+        "p": 5645
+    },
+    {
+        "country": "Romania",
+        "id": 3743412295,
+        "name": "ALEPH NEWS",
+        "p": 5663
+    },
+    {
+        "country": "Romania",
+        "id": 1347982858,
+        "name": "MOOZ DANCE",
+        "p": 5819
+    },
+    {
+        "country": "Romania",
+        "id": 1464264945,
+        "name": "MTV DANCE",
+        "p": 5843
+    },
+    {
+        "country": "Romania",
+        "id": 3167710399,
+        "name": "ALFA & OMEGA TV",
+        "p": 5920
+    },
+    {
+        "country": "Romania",
+        "id": 3826888042,
+        "name": "MOLDOVA TV",
+        "p": 6259
+    },
+    {
+        "country": "Romania",
+        "id": 1834083224,
+        "name": "PRO ARENA",
+        "p": 6438
+    },
+    {
+        "country": "Romania",
+        "id": 3537690621,
+        "name": "PLOIESTI TV",
+        "p": 6471
+    },
+    {
+        "country": "Romania",
+        "id": 2921308313,
+        "name": "IMPACT TV DANCE",
+        "p": 6498
+    },
+    {
+        "country": "Romania",
+        "id": 1985752732,
+        "name": "ARGES TV",
+        "p": 6518
+    },
+    {
+        "country": "Romania",
+        "id": 277417803,
+        "name": "PRIMA SPORT 2 [LIVE DURING EVENTS ONLY]",
+        "p": 6604
+    },
+    {
+        "country": "Romania",
+        "id": 2425261898,
+        "name": "COMEDYEST HD",
+        "p": 6637
+    },
+    {
+        "country": "Romania",
+        "id": 83636965,
+        "name": "HELLO TASTE",
+        "p": 6725
+    },
+    {
+        "country": "Romania",
+        "id": 3111955796,
+        "name": "A7 TV",
+        "p": 6762
+    },
+    {
+        "country": "Romania",
+        "id": 4253630155,
+        "name": "PARAMOUNT CHANNEL RO",
+        "p": 6857
+    },
+    {
+        "country": "Romania",
+        "id": 3715402689,
+        "name": "1MUSIC CHANNEL",
+        "p": 6862
+    },
+    {
+        "country": "Romania",
+        "id": 1225205721,
+        "name": "MTV 00",
+        "p": 6896
+    },
+    {
+        "country": "Romania",
+        "id": 3985120529,
+        "name": "CATINE",
+        "p": 6912
+    },
+    {
+        "country": "Romania",
+        "id": 1344287270,
+        "name": "INTERMEDIA SUCEAVA",
+        "p": 7043
+    },
+    {
+        "country": "Romania",
+        "id": 1871377147,
+        "name": "METROPOLA TV",
+        "p": 7044
+    },
+    {
+        "country": "Romania",
+        "id": 3648880441,
+        "name": "NATIONAL 24 PLUS",
+        "p": 7060
+    },
+    {
+        "country": "Romania",
+        "id": 3441791596,
+        "name": "VIASAT EXPORER",
+        "p": 7123
+    },
+    {
+        "country": "Romania",
+        "id": 3909115636,
+        "name": "MUSCEL TV",
+        "p": 7191
+    },
+    {
+        "country": "Romania",
+        "id": 1831742567,
+        "name": "ATOMIC TV",
+        "p": 7213
+    },
+    {
+        "country": "Romania",
+        "id": 2785556162,
+        "name": "NATIONAL GEOGRAFIC HD",
+        "p": 7229
+    },
+    {
+        "country": "Romania",
+        "id": 1961522607,
+        "name": "BOLLYWOOD FILM",
+        "p": 7248
+    },
+    {
+        "country": "Romania",
+        "id": 2117365693,
+        "name": "DAVINCI LEARNING",
+        "p": 7263
+    },
+    {
+        "country": "Romania",
+        "id": 4136539779,
+        "name": "TELEKOM SPORT 1 HD",
+        "p": 7342
+    },
+    {
+        "country": "Romania",
+        "id": 1870114308,
+        "name": "TRAVEL MIX",
+        "p": 7354
+    },
+    {
+        "country": "Romania",
+        "id": 2629396228,
+        "name": "TEENNICK",
+        "p": 7456
+    },
+    {
+        "country": "Romania",
+        "id": 4042981340,
+        "name": "COMEDY EST",
+        "p": 7541
+    },
+    {
+        "country": "Romania",
+        "id": 3818331108,
+        "name": "MEGAMAX",
+        "p": 7602
+    },
+    {
+        "country": "Romania",
+        "id": 3491626627,
+        "name": "ARDEAL TV",
+        "p": 7701
+    },
+    {
+        "country": "Romania",
+        "id": 1533490433,
+        "name": "ATOMIC ACADEMY TV",
+        "p": 7702
+    },
+    {
+        "country": "Romania",
+        "id": 2050981665,
+        "name": "EMI TV",
+        "p": 7703
+    },
+    {
+        "country": "Romania",
+        "id": 388462731,
+        "name": "EXTREME SPORT RO",
+        "p": 7730
+    },
+    {
+        "country": "Romania",
+        "id": 2414002905,
+        "name": "M9TV",
+        "p": 7799
+    },
+    {
+        "country": "Romania",
+        "id": 2929793917,
+        "name": "PRO FIT",
+        "p": 7801
+    },
+    {
+        "country": "Romania",
+        "id": 3031142910,
+        "name": "TELEKOM SPORT 3 HD",
+        "p": 7841
+    },
+    {
+        "country": "Romania",
+        "id": 3194919143,
+        "name": "TELEKOM SPORT 4 HD",
+        "p": 7942
+    },
+    {
+        "country": "Romania",
+        "id": 1059974583,
+        "name": "DTX HD RO",
+        "p": 8001
+    },
+    {
+        "country": "Romania",
+        "id": 130908298,
+        "name": "OBSERVATOR NEWS",
+        "p": 8088
+    },
+    {
+        "country": "Romania",
+        "id": 2323251357,
+        "name": "DISCOVERY HD SHOWCASE",
+        "p": 8156
+    },
+    {
+        "country": "Romania",
+        "id": 2421228941,
+        "name": "TVR INFO",
+        "p": 8179
+    },
+    {
+        "country": "Romania",
+        "id": 3509508831,
+        "name": "TVR TIMISOARA",
+        "p": 8309
+    },
+    {
+        "country": "Romania",
+        "id": 2013368672,
+        "name": "TELEKOM SPORT 2 HD",
+        "p": 8498
+    },
+    {
+        "country": "Romania",
+        "id": 2424114096,
+        "name": "MEDICOOL TV",
+        "p": 8516
+    },
+    {
+        "country": "Romania",
+        "id": 1184121092,
+        "name": "TELESTAR1",
+        "p": 8517
+    }
+]

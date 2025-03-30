@@ -1,0 +1,1142 @@
+[
+    {
+        "country": "Portugal",
+        "id": 702454257,
+        "name": "SPORT TV 2 (BACKUP)",
+        "p": 51
+    },
+    {
+        "country": "Portugal",
+        "id": 1814987647,
+        "name": "ELEVEN SPORT 1",
+        "p": 68
+    },
+    {
+        "country": "Portugal",
+        "id": 1631199830,
+        "name": "ELEVEN SPORT 1 (BACKUP)",
+        "p": 74
+    },
+    {
+        "country": "Portugal",
+        "id": 2344682350,
+        "name": "SPORT TV 2",
+        "p": 88
+    },
+    {
+        "country": "Portugal",
+        "id": 805844173,
+        "name": "CM TV",
+        "p": 103
+    },
+    {
+        "country": "Portugal",
+        "id": 3099098765,
+        "name": "SIC HD",
+        "p": 137
+    },
+    {
+        "country": "Portugal",
+        "id": 1599763557,
+        "name": "ELEVEN SPORTS 1",
+        "p": 147
+    },
+    {
+        "country": "Portugal",
+        "id": 2118231470,
+        "name": "SPORT TV 6",
+        "p": 162
+    },
+    {
+        "country": "Portugal",
+        "id": 1658993918,
+        "name": "SPORT TV 2 HD",
+        "p": 167
+    },
+    {
+        "country": "Portugal",
+        "id": 2647788125,
+        "name": "TVI",
+        "p": 186
+    },
+    {
+        "country": "Portugal",
+        "id": 3428940222,
+        "name": "SPORT TV 1",
+        "p": 187
+    },
+    {
+        "country": "Portugal",
+        "id": 3790970324,
+        "name": "TVCINE ACTION",
+        "p": 231
+    },
+    {
+        "country": "Portugal",
+        "id": 3523975641,
+        "name": "ELEVEN SPORT 4 HD",
+        "p": 238
+    },
+    {
+        "country": "Portugal",
+        "id": 1438628906,
+        "name": "SPORT TV 1 (BACKUP)",
+        "p": 246
+    },
+    {
+        "country": "Portugal",
+        "id": 2112830810,
+        "name": "SPORT TV 1 HD (BACKUP)",
+        "p": 249
+    },
+    {
+        "country": "Portugal",
+        "id": 779445982,
+        "name": "SPORT TV 2 HD (BACKUP)",
+        "p": 251
+    },
+    {
+        "country": "Portugal",
+        "id": 3762658364,
+        "name": "SIC",
+        "p": 252
+    },
+    {
+        "country": "Portugal",
+        "id": 737435862,
+        "name": "FOX HD",
+        "p": 263
+    },
+    {
+        "country": "Portugal",
+        "id": 3966581533,
+        "name": "SPORT TV 1 HD",
+        "p": 274
+    },
+    {
+        "country": "Portugal",
+        "id": 3508326983,
+        "name": "SPORT TV 4 (BACKUP)",
+        "p": 283
+    },
+    {
+        "country": "Portugal",
+        "id": 1059923452,
+        "name": "BENFICA TV (BACKUP)",
+        "p": 287
+    },
+    {
+        "country": "Portugal",
+        "id": 3628095071,
+        "name": "CANAL HOLLYWOOD",
+        "p": 302
+    },
+    {
+        "country": "Portugal",
+        "id": 4163765902,
+        "name": "RTP 2",
+        "p": 307
+    },
+    {
+        "country": "Portugal",
+        "id": 4112970089,
+        "name": "SIC NOTICIAS",
+        "p": 313
+    },
+    {
+        "country": "Portugal",
+        "id": 492504973,
+        "name": "ELEVEN SPORT 2 (BACKUP)",
+        "p": 354
+    },
+    {
+        "country": "Portugal",
+        "id": 3499798327,
+        "name": "FOX MOVIES HD",
+        "p": 358
+    },
+    {
+        "country": "Portugal",
+        "id": 3033626759,
+        "name": "SPORT TV 3 (BACKUP)",
+        "p": 359
+    },
+    {
+        "country": "Portugal",
+        "id": 1255821242,
+        "name": "ELEVEN SPORTS 1 HD (BACKUP)",
+        "p": 362
+    },
+    {
+        "country": "Portugal",
+        "id": 2596009475,
+        "name": "CINE MUNDO",
+        "p": 366
+    },
+    {
+        "country": "Portugal",
+        "id": 384749599,
+        "name": "ELEVEN SPORT 3",
+        "p": 372
+    },
+    {
+        "country": "Portugal",
+        "id": 3213786206,
+        "name": "RTP 1",
+        "p": 406
+    },
+    {
+        "country": "Portugal",
+        "id": 3294572902,
+        "name": "ELEVEN SPORTS 1 HD",
+        "p": 411
+    },
+    {
+        "country": "Portugal",
+        "id": 2972159450,
+        "name": "CANAL 11 HD (BACKUP)",
+        "p": 432
+    },
+    {
+        "country": "Portugal",
+        "id": 551507343,
+        "name": "PORTO CANAL",
+        "p": 443
+    },
+    {
+        "country": "Portugal",
+        "id": 419434034,
+        "name": "BTV HD",
+        "p": 444
+    },
+    {
+        "country": "Portugal",
+        "id": 75626190,
+        "name": "SPORT TV 4",
+        "p": 496
+    },
+    {
+        "country": "Portugal",
+        "id": 199161253,
+        "name": "CANAL 11",
+        "p": 501
+    },
+    {
+        "country": "Portugal",
+        "id": 1531114528,
+        "name": "BENFICA TV",
+        "p": 520
+    },
+    {
+        "country": "Portugal",
+        "id": 630859525,
+        "name": "ELEVEN SPORTS 3",
+        "p": 530
+    },
+    {
+        "country": "Portugal",
+        "id": 3101553820,
+        "name": "TVI HD",
+        "p": 595
+    },
+    {
+        "country": "Portugal",
+        "id": 3862034077,
+        "name": "SPORT TV +",
+        "p": 601
+    },
+    {
+        "country": "Portugal",
+        "id": 1126272030,
+        "name": "SPORT TV 7",
+        "p": 602
+    },
+    {
+        "country": "Portugal",
+        "id": 474759302,
+        "name": "AXN MOVIES",
+        "p": 605
+    },
+    {
+        "country": "Portugal",
+        "id": 3475414729,
+        "name": "TVI REALITY",
+        "p": 613
+    },
+    {
+        "country": "Portugal",
+        "id": 3143462075,
+        "name": "AXN HD",
+        "p": 615
+    },
+    {
+        "country": "Portugal",
+        "id": 3064015582,
+        "name": "SPORT TV 3",
+        "p": 617
+    },
+    {
+        "country": "Portugal",
+        "id": 419040949,
+        "name": "ELEVEN SPORTS 2",
+        "p": 632
+    },
+    {
+        "country": "Portugal",
+        "id": 793631803,
+        "name": "TVCINE ACTION HD",
+        "p": 670
+    },
+    {
+        "country": "Portugal",
+        "id": 2291776416,
+        "name": "TV RECORD",
+        "p": 693
+    },
+    {
+        "country": "Portugal",
+        "id": 730790319,
+        "name": "ELEVEN SPORT 2",
+        "p": 712
+    },
+    {
+        "country": "Portugal",
+        "id": 2182682775,
+        "name": "CNN PORTUGAL",
+        "p": 730
+    },
+    {
+        "country": "Portugal",
+        "id": 1911367959,
+        "name": "SIC NOVELAS",
+        "p": 744
+    },
+    {
+        "country": "Portugal",
+        "id": 254790946,
+        "name": "RTP INTERNACIONAL",
+        "p": 752
+    },
+    {
+        "country": "Portugal",
+        "id": 891358544,
+        "name": "STAR MOVIES",
+        "p": 759
+    },
+    {
+        "country": "Portugal",
+        "id": 1167702614,
+        "name": "TVCINE TOP",
+        "p": 763
+    },
+    {
+        "country": "Portugal",
+        "id": 971104126,
+        "name": "SPORT TV 5",
+        "p": 768
+    },
+    {
+        "country": "Portugal",
+        "id": 405619759,
+        "name": "TVCINE TOP HD",
+        "p": 779
+    },
+    {
+        "country": "Portugal",
+        "id": 1676049953,
+        "name": "AMC BREAK",
+        "p": 783
+    },
+    {
+        "country": "Portugal",
+        "id": 2864320028,
+        "name": "PORTO CANAL (BACKUP)",
+        "p": 914
+    },
+    {
+        "country": "Portugal",
+        "id": 1394401047,
+        "name": "RTP 1 HD",
+        "p": 955
+    },
+    {
+        "country": "Portugal",
+        "id": 473732861,
+        "name": "STAR CHANNEL",
+        "p": 958
+    },
+    {
+        "country": "Portugal",
+        "id": 1835935719,
+        "name": "CANAL 11 HD",
+        "p": 974
+    },
+    {
+        "country": "Portugal",
+        "id": 3310235454,
+        "name": "RTP 3",
+        "p": 988
+    },
+    {
+        "country": "Portugal",
+        "id": 4254404503,
+        "name": "CINEMUNDO",
+        "p": 995
+    },
+    {
+        "country": "Portugal",
+        "id": 18224894,
+        "name": "SPORT TV + HD",
+        "p": 997
+    },
+    {
+        "country": "Portugal",
+        "id": 2726144103,
+        "name": "NOS STUDIOS",
+        "p": 1001
+    },
+    {
+        "country": "Portugal",
+        "id": 3859589230,
+        "name": "TVCINE EMOTION",
+        "p": 1002
+    },
+    {
+        "country": "Portugal",
+        "id": 1633515070,
+        "name": "SYFY PORTUGAL",
+        "p": 1024
+    },
+    {
+        "country": "Portugal",
+        "id": 956832485,
+        "name": "TVI FICÇÃO",
+        "p": 1032
+    },
+    {
+        "country": "Portugal",
+        "id": 1009109875,
+        "name": "FOX CRIME HD",
+        "p": 1059
+    },
+    {
+        "country": "Portugal",
+        "id": 423629886,
+        "name": "ELEVEN SPORTS 2 HD (BACKUP)",
+        "p": 1100
+    },
+    {
+        "country": "Portugal",
+        "id": 2422531998,
+        "name": "STAR CRIME",
+        "p": 1311
+    },
+    {
+        "country": "Portugal",
+        "id": 2077195788,
+        "name": "AMC CRIME",
+        "p": 1318
+    },
+    {
+        "country": "Portugal",
+        "id": 3954588404,
+        "name": "TVI 24",
+        "p": 1330
+    },
+    {
+        "country": "Portugal",
+        "id": 1987468951,
+        "name": "SIC INTERNACIONAL",
+        "p": 1331
+    },
+    {
+        "country": "Portugal",
+        "id": 2923969632,
+        "name": "SPORT TV 3 HD",
+        "p": 1334
+    },
+    {
+        "country": "Portugal",
+        "id": 2695839043,
+        "name": "CANAL PANDA",
+        "p": 1336
+    },
+    {
+        "country": "Portugal",
+        "id": 2736589383,
+        "name": "SIC CARAS",
+        "p": 1340
+    },
+    {
+        "country": "Portugal",
+        "id": 2111785550,
+        "name": "ODISSEIA",
+        "p": 1344
+    },
+    {
+        "country": "Portugal",
+        "id": 1255159429,
+        "name": "ELEVEN SPORTS 2 HD",
+        "p": 1352
+    },
+    {
+        "country": "Portugal",
+        "id": 1761868334,
+        "name": "TVCINE EDITION",
+        "p": 1359
+    },
+    {
+        "country": "Portugal",
+        "id": 676691326,
+        "name": "SPORTING TV",
+        "p": 1365
+    },
+    {
+        "country": "Portugal",
+        "id": 3286985327,
+        "name": "AXN WHITE HD",
+        "p": 1367
+    },
+    {
+        "country": "Portugal",
+        "id": 3173711892,
+        "name": "CANAL NOS",
+        "p": 1369
+    },
+    {
+        "country": "Portugal",
+        "id": 992741389,
+        "name": "FOX COMEDY HD",
+        "p": 1370
+    },
+    {
+        "country": "Portugal",
+        "id": 2259646737,
+        "name": "SPORT TV",
+        "p": 1377
+    },
+    {
+        "country": "Portugal",
+        "id": 368968283,
+        "name": "RTP ÁFRICA",
+        "p": 1379
+    },
+    {
+        "country": "Portugal",
+        "id": 3682477794,
+        "name": "CAÇAVISION",
+        "p": 1382
+    },
+    {
+        "country": "Portugal",
+        "id": 455247965,
+        "name": "BOM SOM",
+        "p": 1387
+    },
+    {
+        "country": "Portugal",
+        "id": 2849222045,
+        "name": "SPORT TV 3 HD (BACKUP)",
+        "p": 1388
+    },
+    {
+        "country": "Portugal",
+        "id": 1718019314,
+        "name": "SPORT TV NBA",
+        "p": 1393
+    },
+    {
+        "country": "Portugal",
+        "id": 3663001423,
+        "name": "TPA NOTÍCIAS",
+        "p": 1411
+    },
+    {
+        "country": "Portugal",
+        "id": 3558682175,
+        "name": "MTV PORTUGAL",
+        "p": 1422
+    },
+    {
+        "country": "Portugal",
+        "id": 4282023659,
+        "name": "TRAVEL CHANNEL",
+        "p": 1429
+    },
+    {
+        "country": "Portugal",
+        "id": 2693440346,
+        "name": "BIGGS",
+        "p": 1461
+    },
+    {
+        "country": "Portugal",
+        "id": 3068526841,
+        "name": "TV GLOBO",
+        "p": 1616
+    },
+    {
+        "country": "Portugal",
+        "id": 3725483887,
+        "name": "ELEVEN SPORT 6",
+        "p": 1692
+    },
+    {
+        "country": "Portugal",
+        "id": 2760717689,
+        "name": "SPORT TV 4 HD",
+        "p": 1710
+    },
+    {
+        "country": "Portugal",
+        "id": 513907015,
+        "name": "ELEVEN SPORT 5 HD",
+        "p": 1735
+    },
+    {
+        "country": "Portugal",
+        "id": 3195314998,
+        "name": "ELEVEN SPORTS 4 HD (BACKUP)",
+        "p": 1802
+    },
+    {
+        "country": "Portugal",
+        "id": 1747400167,
+        "name": "SPORT TV 5 HD",
+        "p": 1934
+    },
+    {
+        "country": "Portugal",
+        "id": 2132630830,
+        "name": "SIC NOTICIAS HD",
+        "p": 1964
+    },
+    {
+        "country": "Portugal",
+        "id": 590086654,
+        "name": "SIC MULHER",
+        "p": 1972
+    },
+    {
+        "country": "Portugal",
+        "id": 1211778226,
+        "name": "RECORD TV",
+        "p": 1980
+    },
+    {
+        "country": "Portugal",
+        "id": 1282781678,
+        "name": "STAR COMEDY",
+        "p": 1983
+    },
+    {
+        "country": "Portugal",
+        "id": 3679644515,
+        "name": "BLAZE",
+        "p": 2007
+    },
+    {
+        "country": "Portugal",
+        "id": 2121846219,
+        "name": "NBA TV",
+        "p": 2013
+    },
+    {
+        "country": "Portugal",
+        "id": 3430368704,
+        "name": "TV MANA 1",
+        "p": 2014
+    },
+    {
+        "country": "Portugal",
+        "id": 4075632687,
+        "name": "STAR LIFE",
+        "p": 2022
+    },
+    {
+        "country": "Portugal",
+        "id": 2866467493,
+        "name": "ELEVEN SPORTS 5",
+        "p": 2023
+    },
+    {
+        "country": "Portugal",
+        "id": 476765689,
+        "name": "A BOLA TV",
+        "p": 2025
+    },
+    {
+        "country": "Portugal",
+        "id": 3518481964,
+        "name": "RTP MEMÓRIA",
+        "p": 2028
+    },
+    {
+        "country": "Portugal",
+        "id": 2171243952,
+        "name": "PANDA KIDS",
+        "p": 2033
+    },
+    {
+        "country": "Portugal",
+        "id": 178864298,
+        "name": "SIC RADICAL",
+        "p": 2040
+    },
+    {
+        "country": "Portugal",
+        "id": 3972324290,
+        "name": "ALMA LUSA",
+        "p": 2041
+    },
+    {
+        "country": "Portugal",
+        "id": 700421686,
+        "name": "CASA & PESCA",
+        "p": 2042
+    },
+    {
+        "country": "Portugal",
+        "id": 2106247479,
+        "name": "OPTO",
+        "p": 2046
+    },
+    {
+        "country": "Portugal",
+        "id": 1972183649,
+        "name": "AFRO MUSIC CHANNEL",
+        "p": 2048
+    },
+    {
+        "country": "Portugal",
+        "id": 355320503,
+        "name": "WWE NETWORK",
+        "p": 2049
+    },
+    {
+        "country": "Portugal",
+        "id": 574978281,
+        "name": "24 KITCHEN HD",
+        "p": 2050
+    },
+    {
+        "country": "Portugal",
+        "id": 1577389543,
+        "name": "CACCIA E PESCA",
+        "p": 2051
+    },
+    {
+        "country": "Portugal",
+        "id": 3637826537,
+        "name": "RTP MADEIRA",
+        "p": 2052
+    },
+    {
+        "country": "Portugal",
+        "id": 3318391725,
+        "name": "DIZI CHANNEL",
+        "p": 2058
+    },
+    {
+        "country": "Portugal",
+        "id": 998167995,
+        "name": "MCM POP",
+        "p": 2060
+    },
+    {
+        "country": "Portugal",
+        "id": 4169387839,
+        "name": "KURIAKOS KIDS",
+        "p": 2061
+    },
+    {
+        "country": "Portugal",
+        "id": 2854171354,
+        "name": "SIC K",
+        "p": 2062
+    },
+    {
+        "country": "Portugal",
+        "id": 230373228,
+        "name": "CNBC",
+        "p": 2064
+    },
+    {
+        "country": "Portugal",
+        "id": 631488050,
+        "name": "MEO VIDEOCLUBE",
+        "p": 2071
+    },
+    {
+        "country": "Portugal",
+        "id": 4001042963,
+        "name": "LOCAL VISÃO",
+        "p": 2072
+    },
+    {
+        "country": "Portugal",
+        "id": 2869243622,
+        "name": "W-SPORT",
+        "p": 2074
+    },
+    {
+        "country": "Portugal",
+        "id": 1711720571,
+        "name": "CANCAO NOVA",
+        "p": 2075
+    },
+    {
+        "country": "Portugal",
+        "id": 1348598432,
+        "name": "AR TV CANAL PARLAMENTO",
+        "p": 2076
+    },
+    {
+        "country": "Portugal",
+        "id": 747491557,
+        "name": "CANAL Q",
+        "p": 2082
+    },
+    {
+        "country": "Portugal",
+        "id": 2006567656,
+        "name": "C MUSIC",
+        "p": 2085
+    },
+    {
+        "country": "Portugal",
+        "id": 380717209,
+        "name": "ARTV",
+        "p": 2086
+    },
+    {
+        "country": "Portugal",
+        "id": 1100907938,
+        "name": "RTP AÇORES",
+        "p": 2087
+    },
+    {
+        "country": "Portugal",
+        "id": 3775102231,
+        "name": "CBS REALITY",
+        "p": 2092
+    },
+    {
+        "country": "Portugal",
+        "id": 71983983,
+        "name": "FUEL TV",
+        "p": 2093
+    },
+    {
+        "country": "Portugal",
+        "id": 1069493045,
+        "name": "AFRO MUSIC",
+        "p": 2103
+    },
+    {
+        "country": "Portugal",
+        "id": 3680852273,
+        "name": "SAUDE+",
+        "p": 2104
+    },
+    {
+        "country": "Portugal",
+        "id": 1585099730,
+        "name": "DOG TV",
+        "p": 2106
+    },
+    {
+        "country": "Portugal",
+        "id": 3984238709,
+        "name": "ELEVEN SPORTS 6",
+        "p": 2108
+    },
+    {
+        "country": "Portugal",
+        "id": 1894635407,
+        "name": "KANUCA TV",
+        "p": 2113
+    },
+    {
+        "country": "Portugal",
+        "id": 265959469,
+        "name": "TVI FIC",
+        "p": 2126
+    },
+    {
+        "country": "Portugal",
+        "id": 2640469163,
+        "name": "KURIAKOS TV",
+        "p": 2129
+    },
+    {
+        "country": "Portugal",
+        "id": 2167632122,
+        "name": "STINGRAY RETRO",
+        "p": 2136
+    },
+    {
+        "country": "Portugal",
+        "id": 2769296124,
+        "name": "TRAVELXP",
+        "p": 2137
+    },
+    {
+        "country": "Portugal",
+        "id": 4017090315,
+        "name": "MTV CLASSIC",
+        "p": 2150
+    },
+    {
+        "country": "Portugal",
+        "id": 3354497993,
+        "name": "CASA E COZINHA",
+        "p": 2155
+    },
+    {
+        "country": "Portugal",
+        "id": 231845708,
+        "name": "CAMPO PEQUENO",
+        "p": 2164
+    },
+    {
+        "country": "Portugal",
+        "id": 1276326705,
+        "name": "SPORT TV 5 (BACKUP)",
+        "p": 2494
+    },
+    {
+        "country": "Portugal",
+        "id": 2256156187,
+        "name": "ELEVEN SPORTS 3 HD",
+        "p": 2508
+    },
+    {
+        "country": "Portugal",
+        "id": 2665930621,
+        "name": "ELEVEN SPORTS 3 HD (BACKUP)",
+        "p": 2723
+    },
+    {
+        "country": "Portugal",
+        "id": 3247544311,
+        "name": "SPORTING TV (BACKUP)",
+        "p": 2959
+    },
+    {
+        "country": "Portugal",
+        "id": 2599146036,
+        "name": "TVCINE EDITION HD",
+        "p": 3004
+    },
+    {
+        "country": "Portugal",
+        "id": 521041364,
+        "name": "EUROSPORT 2 (BACKUP)",
+        "p": 3036
+    },
+    {
+        "country": "Portugal",
+        "id": 1985937235,
+        "name": "ELEVEN SPORTS 5 FHD",
+        "p": 3056
+    },
+    {
+        "country": "Portugal",
+        "id": 1075134364,
+        "name": "ELEVEN SPORTS 5 HD",
+        "p": 3085
+    },
+    {
+        "country": "Portugal",
+        "id": 1783116785,
+        "name": "ELEVEN SPORTS 6 HD (BACKUP)",
+        "p": 3160
+    },
+    {
+        "country": "Portugal",
+        "id": 1961433088,
+        "name": "RTP ACORES",
+        "p": 3164
+    },
+    {
+        "country": "Portugal",
+        "id": 2391771240,
+        "name": "TVI AFRICA",
+        "p": 3275
+    },
+    {
+        "country": "Portugal",
+        "id": 2370723370,
+        "name": "AXN MOVIES HD",
+        "p": 3277
+    },
+    {
+        "country": "Portugal",
+        "id": 3694338679,
+        "name": "TRACE URBAN HD",
+        "p": 3422
+    },
+    {
+        "country": "Portugal",
+        "id": 1137861489,
+        "name": "CRIME INVISTIGATION",
+        "p": 3581
+    },
+    {
+        "country": "Portugal",
+        "id": 2751720311,
+        "name": "SPORT TV NBA HD (BACKUP)",
+        "p": 3697
+    },
+    {
+        "country": "Portugal",
+        "id": 4064509244,
+        "name": "TVCINE EMOTION HD",
+        "p": 3740
+    },
+    {
+        "country": "Portugal",
+        "id": 1885378174,
+        "name": "RTP AFRICA",
+        "p": 4257
+    },
+    {
+        "country": "Portugal",
+        "id": 3688799089,
+        "name": "FASHIONTV",
+        "p": 4511
+    },
+    {
+        "country": "Portugal",
+        "id": 3466213503,
+        "name": "ELEVEN SPORTS 6 HD",
+        "p": 4707
+    },
+    {
+        "country": "Portugal",
+        "id": 462395947,
+        "name": "MOTORVISION (BACKUP)",
+        "p": 4867
+    },
+    {
+        "country": "Portugal",
+        "id": 80762089,
+        "name": "MOTO GP HD",
+        "p": 5251
+    },
+    {
+        "country": "Portugal",
+        "id": 1874759730,
+        "name": "CANAL 180",
+        "p": 5289
+    },
+    {
+        "country": "Portugal",
+        "id": 784576657,
+        "name": "TOROS TV (BACKUP)",
+        "p": 5537
+    },
+    {
+        "country": "Portugal",
+        "id": 3753231864,
+        "name": "PFC (BACKUP)",
+        "p": 5558
+    },
+    {
+        "country": "Portugal",
+        "id": 2447945475,
+        "name": "PFC",
+        "p": 5846
+    },
+    {
+        "country": "Portugal",
+        "id": 2568401236,
+        "name": "FIREMAN SAM",
+        "p": 5909
+    },
+    {
+        "country": "Portugal",
+        "id": 3953435677,
+        "name": "FUEL TV (BACKUP)",
+        "p": 6354
+    },
+    {
+        "country": "Portugal",
+        "id": 3476204840,
+        "name": "SPORT TV NBA HD",
+        "p": 6489
+    },
+    {
+        "country": "Portugal",
+        "id": 1870155352,
+        "name": "TVI REALITY CAMARA 2",
+        "p": 6632
+    },
+    {
+        "country": "Portugal",
+        "id": 1377331176,
+        "name": "TVI REALITY CAMARA 3",
+        "p": 6731
+    },
+    {
+        "country": "Portugal",
+        "id": 2099488922,
+        "name": "TV GLOBO NOW",
+        "p": 6737
+    },
+    {
+        "country": "Portugal",
+        "id": 1909931690,
+        "name": "TVI REALITY MOSAICO",
+        "p": 6778
+    },
+    {
+        "country": "Portugal",
+        "id": 2395509066,
+        "name": "FATIMA TV",
+        "p": 6885
+    },
+    {
+        "country": "Portugal",
+        "id": 3761814520,
+        "name": "TVI REALITY CAMARA 4",
+        "p": 6922
+    },
+    {
+        "country": "Portugal",
+        "id": 1811163671,
+        "name": "EUROSPORT 6",
+        "p": 6984
+    },
+    {
+        "country": "Portugal",
+        "id": 1545104352,
+        "name": "MEO DESTAQUES",
+        "p": 7034
+    },
+    {
+        "country": "Portugal",
+        "id": 2141709191,
+        "name": "KOMBAT SPORT",
+        "p": 7307
+    },
+    {
+        "country": "Portugal",
+        "id": 3973057265,
+        "name": "JIM JAM",
+        "p": 7408
+    },
+    {
+        "country": "Portugal",
+        "id": 70466683,
+        "name": "KOMBAT SPORT (BACKUP)",
+        "p": 7527
+    },
+    {
+        "country": "Portugal",
+        "id": 2958694111,
+        "name": "PANDA BIGGS",
+        "p": 7886
+    }
+]
